@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)#://fortalconnect.com.br/ -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta author="Jonathan Franco">
+  <meta name="theme-color" content="#212121">
+  <meta name="msapplication-navbutton-color" content="#212121">
+  <title>Fortal Connect - Informática e Segurança Eletrônica</title>
+  <link rel="icon" href="https://fortalconnect.com.br/img/fc-icon.png" type="image/png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="./css/all.css">
+  <link href="./css/css" rel="stylesheet">
+
+</head>
+
+<body style="scroll-behavior: smooth" class="fadeIn smooth-scroll" data-spy="scroll"
+  data-target=".navbar" data-offset="50">
+
+  <div id="background-load" style="display: none;">
+    <div class="load"></div>
+  </div>
+
+  <div id="home">
+    <!--Desktop Menu-->
+    <nav class="navbar navbar-expand-lg sticky-top scrolling-navbar elegant-color-dark">
+      <div class="container nav-effect d-none d-sm-flex">
+        <a class="navbar-brand" href=""><img id="nav-logo"
+            src="./images/fc-logo.svg"
+            style="transform: scale(1.0);"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="ml-2 nav nav-pills smooth-scroll text-uppercase">
+            <li class="nav-item active">
+              <a class="nav-link active" id="desk-link" href=#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="desk-link" href="#">Empresa</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="desk-link" href="#">Vídeos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="desk-link" href="#">Clientes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="desk-link" href="#">Downloads</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="desk-link" href="#">Contato</a>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a id="face-icon" class="nav-link waves-effect waves-light" href="#t"
+                target="_blank">
+                <i class="fab fa-facebook-f h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="insta-icon" class="nav-link waves-effect waves-light"
+                href="#" target="_blank">
+                <i class="fab fa-instagram h5-responsive"></i></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a id="whatsapp-icon" class="nav-link waves-effect waves-light"
+                href="#://wa.me/5585986862904?text=Olá%20gostaria%20de%20tirar%20uma%20dúvida" target="_blank">
+                <i class="fab fa-whatsapp h5-responsive"></i></a>
+            </li> -->
+            <li class="nav-item">
+              <a id="maps-icon" class="nav-link waves-effect waves-light" target="_blank"
+                href="">
+                <i class="fas fa-map-marker-alt h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="maps-icon" class="nav-link waves-effect waves-light" target="_blank"
+                href="">
+                <i class="fab fa-youtube h5-responsive"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Desktop Menu-->
+
+      <!--Mobile Menu-->
+      <div class="btn-menu">
+        <i class="fas fa-bars mr-3 h2 btn-menu mt-3 white-text" onclick="openNav()"></i>
+        <span class="logo-mobile h2"><img
+            src="./fc-logo.svg"></span>
+      </div>
+
+      <div id="myNav" class="nav-mobile" style="overflow: hidden;">
+        <div id="side-menu-nav" class="my-2 ml-3">
+          <span class="logo-mobile mr-auto mt-2 h2"><img
+              src="./fc-logo.svg"></span>
+          <span id="close-btn" class="closebtn mr-2 h2 white-text" onclick="closeNav()"><i
+              class="h2 grey-text fas fa-times"></i></span>
+        </div>
+
+        <div class="container navbar-light ml-2 nav-mobile-content text-left navbar-nav mobile-pills text-uppercase"
+          id="menu-content" style="font-size: 20px;">
+          <li class="nav-item py-1" onclick="closeNav()">
+            <a class="nav-link white-text fas fa-home active" href="">
+              <span class="ml-2 m-mobile">
+                Home
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item py-1" onclick="closeNav()">
+            <a class="nav-link white-text fas fa-info-circle" href="">
+              <span class="ml-2 m-mobile">
+                Empresa
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item py-1" onclick="closeNav()">
+            <a class="nav-link white-text fas fa-info-circle" href="">
+              <span class="ml-2 m-mobile">
+                Vídeos
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item py-1" onclick="closeNav()">
+            <a class="nav-link white-text fas fa-users" href="">
+              <span class="ml-2 m-mobile">
+                Clientes
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item py-1" onclick="closeNav()">
+            <a class="nav-link white-text fas fa-download" href="">
+              <span class="ml-2 m-mobile">
+                Downloads
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item py-1" onclick="closeNav()">
+            <a class="nav-link white-text fas fa-envelope" href="">
+              <span class="ml-2 m-mobile">
+                Contato
+              </span>
+            </a>
+          </li>
+
+        </div>
+
+        <div id="social-media" class="col-md-12 justify-content-center d-flex align-items-center ml-1 mb-5" style="color: #fff3e0;position: absolute;bottom: 0">
+          <a class="fab fa-facebook-f mx-1 font-weight-bold h6-responsive" href="" target="_blank"></a>
+          <a class="fab fa-instagram mx-1 font-weight-bold h6-responsive" href="" target="_blank"></a>
+          <!-- <a class="fab fa-whatsapp mx-1 font-weight-bold h6-responsive"
+            href="#://wa.me/5585986862904?text=Olá%20gostaria%20de%20tirar%20uma%20dúvida" target="_blank"></a> -->
+          <a class="fas fa-map-marker-alt mx-1 font-weight-bold h6-responsive" href="" target="_blank"></a>
+          <a class="fab fa-youtube mx-1 font-weight-bold h6-responsive" href="" target="_blank"></a>
+        </div>
+      </div>
+      <!--Mobile Menu-->
+
+    </nav>
+
+    <div id="d-body">
+
+      <!--Contato-->
+      <section id="contato" class="py-5 container">
+
+        <div class="wow zoomIn text-md-center mb-3" data-wow-delay="0.1s">
+          <p class="text-danger text-center font-weight-bold mt-5 h1-responsive">Garantia</p>
+          <p class="grey-text text-center container h5-responsive">Quer procurar o seu produto? Digite um identificador do produto.</b></p>
+        </div>
+
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-5 my-5 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Form-->
+            <form method="POST" action=""
+              class="bg-danger card p-4 text-center border border-light">
+
+              <!-- Default form contact -->
+
+              <p class="h3-responsive white-text"><i class="fas fa-mail-bulk"></i> Identifique o Produto</p>
+
+              <hr class="white mb-4 mt-0">
+
+              <!-- Name -->
+              <input type="text" class="form-control mb-4 field-icon" placeholder="Número de Série" name="nome" id="nserie" required="">
+
+              <div class="text-center mt-4">
+                <button type="reset" class="btn btn-outline-white btn-rounded btn-md">Limpar</button>
+                <button type="button" style="color: #f14444!important" class="btn btn-white btn-rounded btn-md" id="pesquisar">Pesquisar</button>
+              </div>
+
+            </form>
+            <!--Form-->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-7 my-5 wow fadeInRight" data-wow-delay="0.4s">
+
+            <!--Resultado Pesquisa-->
+            <div id="map-container-google-2" class="z-depth-1-half map-container" style="border-radius: 10px">
+              
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Placa</th>
+                    <th>Processador</th>
+                    <th>Memória</th>
+                    <th>HD</th>
+                    <th>Fonte</th>
+                    <th>Garantia</th>
+                  </tr>
+                </thead>
+                <tbody id="resultado_pesquisa">
+
+                </tbody>
+              </table>
+
+            </div>
+
+            <!--Resultado Pesquisa-->
+
+            <br>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+
+      </section>
+      <!--Contato-->
+
+    </div>
+
+    <!-- Footer -->
+    <footer onclick="closeNav()" class="page-footer font-small bg-light pt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-dark text-md-left">
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Fortal Connect</h6>
+            <p>Se você precisa de mais segurança para a sua casa ou empresa, fique tranquilo. A Fortal Connect é líder
+              em Gerenciamento de imagem e Assitência Técnica em Informática proporcionando o melhor para você e sua
+              empresa.</p>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Links -->
+            <h6 class="text-uppercase mb-4 font-weight-bold">TELEFONES</h6>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-phone mr-3"></i> (85) 98686-2904
+                </p>
+              </li>
+              <h6 class="text-uppercase mb-4 font-weight-bold">COMERCIAL</h6>
+              <li>
+                <p>
+                  <i class="fas fa-phone mr-3"></i> (85) 99133-9826
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contatos</h6>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i>R. Arruda Câmara, 509 - Vila Peri
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i> fconnect.2019@gmail.com
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+        <hr>
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+            <!--Copyright-->
+            <p class="text-center text-md-left">© 2020 Copyright -
+              <strong> Fortal Connect</strong>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-md bg-dark mx-1" href="#"
+                    target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-md bg-dark mx-1" href="#"
+                    target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <!-- <li class="list-inline-item">
+                  <a class="btn-floating btn-md bg-dark mx-1"
+                    href="#://wa.me/5585986862904?text=Olá%20gostaria%20de%20tirar%20uma%20dúvida" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li> -->
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-md bg-dark mx-1" href=""
+                    target="_blank">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-md bg-dark mx-1" target="_blank"
+                    href="">
+                    <i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+  </div>
+
+  <!-- Top Button -->
+  <div id="btntop" class="fixed-action-btn smooth-scroll" style="display: none">
+    <div class="d-flex align-items-center">
+      <div id="btnBubble">
+        <div class="d-flex align-items-center">
+          <div class="bg-light rounded text-dark shadow font-weight-bold p-3 position-relative"
+            style="max-width: 320px;">
+            <span class="d-flex justify-content-end" style="margin-top: -15px;margin-right: -15px;"
+              onclick="closeBubble()">
+              <span class="text-danger" style="cursor: pointer">
+                <i class="fas fa-times-circle"></i>
+              </span>
+            </span>
+            <span>Quer um contrato de Ti ou Segurança Eletrônica com suporte diferenciado?</span>
+          </div>
+          <span class="mr-2 text-light lead">
+            <i class="fas fa-caret-right"></i>
+          </span>
+        </div>
+      </div>
+
+      <a class="btn-floating btn-md bg-dark mx-1"
+        href="#://wa.me/5585986862904?text=Ol%C3%A1%20gostaria%20de%20tirar%20uma%20d%C3%BAvida" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <script src="./javascript/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./javascript/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="./javascript/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./javascript/mdb.js"></script>
+    <script src="./javascript/animation.js"></script>
+    <script src="./javascript/side-menu.js"></script>
+    <script src="./javascript/loading.js"></script>
+    <script src="./javascript/velocity.min.js"></script>
+    <script src="./javascript/buscaInfos.js"></script>
+
+  </div>
+</body>
+
+</html>
