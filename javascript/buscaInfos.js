@@ -24,7 +24,7 @@ var banco = [
         memoria: "8 GB",
         hd: "256 GBPCIe NVMe 3.0 x2 M.2 SSD",
         fonte: "45W, 2 Cells / 3300 mAh",
-        garantia: "25/01/2019"
+        garantia: "25/01/2015"
     }
 ]
 
@@ -36,13 +36,30 @@ $("#pesquisar").click(function(){
     var tabela = document.getElementById("resultado_pesquisa")
     tabela.innerHTML = ""
     filtro.forEach(e => {
-        tabela.innerHTML += `<tr>`+
-                                `<td>${e.placa}</td>`+
-                                `<td>${e.processador}</td>`+
-                                `<td>${e.memoria}</td>`+
-                                `<td>${e.hd}</td>`+
-                                `<td>${e.fonte}</td>`+
-                                `<td>${e.garantia}</td>`+
-                            `</tr>`
-    });
+        var compra = e.garantia
+        var hoje = "01/08/2022"
+        var diff = moment(hoje,"DD/MM/YYYY").diff(moment(compra,"DD/MM/YYYY"))
+        var dias = moment.duration(diff).asDays();
+        var restante = 1825 - Number(dias)
+        if(restante >= 0){
+            tabela.innerHTML += `<tr>`+
+                                    `<td>${e.placa}</td>`+
+                                    `<td>${e.processador}</td>`+
+                                    `<td>${e.memoria}</td>`+
+                                    `<td>${e.hd}</td>`+
+                                    `<td>${e.fonte}</td>`+
+                                    `<td>${restante} dias de garantia!</td>`+
+                                `</tr>`
+        } else {
+            tabela.innerHTML += `<tr>`+
+                                    `<td>${e.placa}</td>`+
+                                    `<td>${e.processador}</td>`+
+                                    `<td>${e.memoria}</td>`+
+                                    `<td>${e.hd}</td>`+
+                                    `<td>${e.fonte}</td>`+
+                                    `<td>Garantia Expirada</td>`+
+                                `</tr>`
+        }
+    })
 })
+
